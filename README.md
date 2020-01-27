@@ -19,35 +19,13 @@ Dependencies
  - libnice - https://github.com/libnice/libnice
  - usrsctp - https://github.com/sctplab/usrsctp
  - openssl - https://www.openssl.org/
- - spdlog  - https://github.com/gabime/spdlog. Header-only. Optional.
+ - spdlog  - https://github.com/gabime/spdlog. Header-only. Optional. (included as submodule)
 
 Building
 --------
 
-On Linux:
-
-**TODO**: deb and rpm packages
-
-  ./configure
-  make
-  sudo make install
-
-On Mac:
-
-**TODO**: homebrew integration
-
-  brew install ...
-  ./configure
-  make
-  sudo make install
-
-
-On Windows:
-
-**TODO**: Visual studio integration, or a script like that jsoncpp library does
-
- - We recommend you just copy-paste the cpp and hpp files into your own project and go from there
-
+  Run `git submodule update --init --recursive` to initialize submodules
+  Than `mkdir build && cd build && cmake .. && make` to build library
 
 Licensing
 ---------
